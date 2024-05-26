@@ -1,10 +1,13 @@
 menu ="""
+Bem vindo ao seu banco
 
-   [d] Depositar    
-   [w] Sacar        
-   [e] Extrato      
-   [q] Quit         
-
+Select a option:
+----------------------
+|   [d] Depositar    |
+|   [w] Sacar        |
+|   [e] Extrato      |
+|   [q] Quit         |
+----------------------
 => """
 
 balance = 0
@@ -50,6 +53,7 @@ while True:
             print(f"\n{extrato}\nBalance: R${balance:.2f}")
         
     elif opcao == "q":
+        print("Até logo.")
         break
     else:
         print("Operação inválida, por favor selecione novamente a operação desejada.")
