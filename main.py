@@ -44,6 +44,10 @@ while True:
 
     elif opcao == "e":
         print("\nExtrato:")
+        if extract == "":
+            print('Não foram realizadas movimentações.')
+        else:
+            print(f"\n{extrato}\nBalance: R${balance:.2f}")
         
     elif opcao == "q":
         break
